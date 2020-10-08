@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap");
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    text-decoration: none;
+  }
+  
+  .navitem {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+
+  
+  nav a:hover {
+    color: grey;
+    cursor: pointer;
+  }
+
+  .logo {
+    max-width: 100px;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  
+  .listItems {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+.contactbox {
+    font-family: "Cinzel" , serif;
+    text-align: center;
+    border-radius: 5px;
+    background-color: grey;
+    padding: 10px;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* The float property allows me to posistion this element a certain way (left, right, none) */
+  .column1 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+  /* The clear property specifies which sides of an element floating items are allowed to float (left, right, both) */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=email] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="tel"] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+   
+   
+  body {
+    background-image: url(../img/contactback2.jpg);
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+   
+  label {
+    display: block;
+  }
+   
+  textarea {
+    display: block;
+    margin: 0 auto;
+  }
+   
+
+
+
+
+  footer {
+
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: auto;
+  }
+  
+  
+  .fa-facebook-f , .fa-instagram , .fa-twitter , .fa-youtube {
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .fa-facebook-f:hover , .fa-instagram:hover , .fa-twitter:hover , .fa-youtube:hover {
+    background-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+  }  
+
+
+
+  @media (max-width: 800px){
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .columnone {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
